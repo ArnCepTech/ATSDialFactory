@@ -1,13 +1,10 @@
 # ATSDialFactory
 
-<img width="2558" height="1306" alt="Screenshot 2026-07-25 125028" src="https://github.com/user-attachments/assets/d242d4f5-b335-43f2-9dd2-67ac6056b9fc" />
+<img width="2559" height="1306" alt="Screenshot 2026-10-17 082858" src="https://github.com/user-attachments/assets/17ec5ef5-f624-4a10-b208-b0e17b62a348" />
 
 A browser-based watch face editor written in TypeScript for IDO smartwatches powered by Actions MCU platforms.
 
 ATSDialFactory allows users to create, edit, preview, and export custom watch faces using the IDO watch face format.
-
-## Notice
-After looking further, the IDB03 actually uses the watch_15 widget, but not watch widget. Use the watch widget for IDB03 at your own risk.
 
 ## Features
 
@@ -28,28 +25,17 @@ Currently supported:
 ### Smartwatches:
 * IDW13
 * IDW18
+* IDW17
 * IDW20
 
+### Rugged Smartwatches:
+* TIT15
+* ID Sport03
+
 ### Smartbands:
-* IDB03
+* GTBand
 
-Additional Actions MCU-based IDO smartwatch models (e.g. IDSport03) may be supported in future releases.
-
-## Known Issues
-
-The widget rendering system is still being improved, so expect issues:
-
-* Hour widget may not have a zero
-
-## Packing Watch Faces
-ATSDialFactory does not support compiling watch faces into a binary format (.iwf). To pack a watch face into an .iwf file, you must install these files/packages first:
-
-* Python 3.11 or higher (With "Add to PATH" enabled)
-* Pillow (pip install pillow)
-
-Usage: `python iwf_packer.py INPUT_FOLDER OUTPUT_FILE`
-
-<img width="1357" height="1204" alt="Untitled - July 20, 2026 at 17 30 03" src="https://github.com/user-attachments/assets/2b3b544f-239e-49ea-8bd2-b181912f8b56" />
+Other smartwatches will be added in future releases.
 
 ## Important Notes
 * Ring widgets, Progressbar widgets, and some custom widgets are not supported yet. They will be added once reverse-engineered further.
